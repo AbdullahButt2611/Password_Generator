@@ -43,6 +43,9 @@ Follwing resources have been used in maintaining this project:
 
 - [Vectizy](https://www.vecteezy.com/vector-art/8328585-password-locked-icon-style) to download the logo of the project
 - [remove.bg](https://www.remove.bg/) to make the logo of the project a png file without any background
+- [BoxIcons](https://boxicons.com/) to import icons into the project
+- [Actionable Color Palletes](https://colorpalettes.colorion.co/#10) to select the theme of the project
+- [Google Fonts](https://fonts.google.com/) to import the Poppins Font Family
 
 
 <br><br>
