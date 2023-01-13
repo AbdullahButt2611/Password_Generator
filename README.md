@@ -19,6 +19,8 @@
 <p align="justify">
 A password generator is a software program that creates random, It  is a tool that creates random, unique passwords to help users protect their accounts and personal information. With this app, users can easily create strong, secure passwords that are difficult for others to guess or crack. The app includes options for users to specify the length and complexity of the passwords they want to generate, as well as any specific characters or patterns they want to include. Additionally, the app may include password storage and management features to help users keep track of their passwords. Whether you're a business owner looking to secure your company's accounts or an individual looking to protect your personal information, this password generator app is an essential tool for staying safe online.unique passwords for users. It is designed to help users create strong, secure passwords that are difficult for others to guess or crack. The app may include options for users to specify the length and complexity of the passwords they want to generate, as well as any specific characters or patterns they want to include. Some password generator apps may also include additional features such as password storage or password management tools. <br>
 A password generator is a tool that creates random, unique passwords to help users protect their accounts and personal information. With this app, users can easily create strong, secure passwords that are difficult for others to guess or crack. The app includes options for users to specify the length and complexity of the passwords they want to generate, as well as any specific characters or patterns they want to include. Additionally, the app may include password storage and management features to help users keep track of their passwords. Whether you're a business owner looking to secure your company's accounts or an individual looking to protect your personal information, this password generator app is an essential tool for staying safe online. <br>
+This app will provide some settings to change the properties of the password. The property in which small letters are included is always checked and is disbaled for the user because the small letters are must to be included into the password. The GUI is already built in such a way that the user can't unselect the option. Once after selecting the options, the generate button is clicked then the system will generate some random password from those properties and the length of the password will be equal to the value we have selected from the slider. Also the password can be configured in such a way that the characters that are already used will not be used anymore. Also, if the length of the password is chnaged from the slider even then the password will be chnaged and a new password will be generated. The app will also display the power of the password through an indicator right below the pasword and the color is dependent on the length of the password.<br>
+The user has also been provided the facility to copy the password through a single click. The copy icon will be changed to ticks to show that the password has been copied to the clipboard and then the user can use it.
 </p>
 
 
@@ -30,7 +32,23 @@ A password generator is a tool that creates random, unique passwords to help use
 <br>
 Following are some of the new features and learning encountered while creating this amazing project:
 
-- Write points here
+- Removing the duplicate characters in the password generated through the following code
+```
+ if(excludeDuplicate)
+ {   
+     !randomPassword.contains(randomChar) || randomChar == " " ? randomPassword += randomChar : i--;
+ }
+ else
+ {
+     randomPassword += randomChar;
+ }
+```
+
+- `.includes()` function has been used for checking the string for present characters instead of `.contains()` becuase it has been deprecated.
+- Copying the data to the system's clipboard:
+```
+navigator.clipboard.writeText(passwordInput.value);
+```
 
 
 <br><br>
@@ -55,7 +73,7 @@ Follwing resources have been used in maintaining this project:
 ### Demo
 <p align="justify">
   The Demo of this working portfolio can be found on <br>
-  [https://rebrand.ly/](https://rebrand.ly/ )
+  <a href = "https://rebrand.ly/PasswordGenerator_MABCORP">https://rebrand.ly/PasswordGenerator_MABCORP</a>
 </p>
 
 
@@ -80,7 +98,7 @@ You can exclusively watch the video on this project from the making to deploying
 
 
 ### GUI
-![GUI for this Project](path)
+![GUI for this Project](/img/demo.png)
 
 
 <br><br>
@@ -93,7 +111,9 @@ You can exclusively watch the video on this project from the making to deploying
 <br>
 Follwing technologies have been used at the core of this application to make it stand in the market place:
 
-- Write points here
+- HTML
+- CSS
+- JavaScript
 
 
 <br><br>
@@ -102,7 +122,7 @@ Follwing technologies have been used at the core of this application to make it 
 
 ### Advancement
 
-> Text here
+> If only the small letter cases are chosen and then password may contain the repeated characters
 
 <br><br>
 <!-- ................................................................................................................................. -->
